@@ -1,0 +1,2 @@
+expense_date,vendor,description,category,business_purpose,amount,payment_method,receipt_saved,receipt_filename,billable_to_client,tax_deduction_type,reimbursed,notes
+2026-01-03,Adobe,Creative Cloud subscription,Software,Proposal graphics and editing,64.99,Credit Card,Yes,2026-01-03_adobe.pdf,No,Software and subscriptions,No,Sample row

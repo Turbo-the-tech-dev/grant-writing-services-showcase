@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Workspace Guide</title>
+    <style>
+        :root {
+            --bg: #f4efe4;
+            --panel: #fffaf0;
+            --ink: #1f2933;
+            --accent: #0f766e;
+            --accent-2: #c2410c;
+            --muted: #5b6470;
+            --line: #d6c7ad;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            background:
+                radial-gradient(circle at top left, #f9e7b8 0, transparent 28%),
+                radial-gradient(circle at bottom right, #d7efe9 0, transparent 32%),
+                var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        .wrap {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 32px 20px 56px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #f7d488, #fef6e4 55%, #d6efe8);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 28px;
+            box-shadow: 0 12px 30px rgba(67, 56, 32, 0.08);
+        }
+        h1, h2 { margin-top: 0; }
+        h1 {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        h2 {
+            color: var(--accent-2);
+            font-size: 1.35rem;
+            margin-bottom: 10px;
+        }
+        .sub {
+            color: var(--muted);
+            margin: 0;
+        }
+        .section {
+            margin-top: 20px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 22px;
+            box-shadow: 0 8px 24px rgba(67, 56, 32, 0.05);
+        }
+        pre {
+            margin: 0;
+            padding: 16px;
+            background: #f8f4ea;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow-x: auto;
+            font-size: 0.95rem;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, Monaco, monospace;
+            background: #f1e7d2;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 14px;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid var(--line);
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #ead8b5;
+            color: var(--ink);
+        }
+        a { color: var(--accent); }
+        ul, ol { padding-left: 22px; }
+        footer {
+            text-align: center;
+            color: var(--muted);
+            margin-top: 28px;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 640px) {
+            .wrap { padding: 18px 14px 40px; }
+            .hero, .section { padding: 18px; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <section class="hero">
+            <h1>Grant Workspace Guide</h1>
+            <p class="sub">Reference for the local grant research and application system in <code>11_Grants/</code>.</p>
+        </section>
+
+        <section class="section">
+            <h2>Purpose</h2>
+            <p>This workspace keeps grant research, active applications, reusable materials, and state funding intelligence organized in one place.</p>
+        </section>
+
+        <section class="section">
+            <h2>Directory Structure</h2>
+            <pre><code>11_Grants/
+├── 01_Strategy_Planning/
+├── 02_Financials/
+├── 03_Legal_Compliance/
+├── 04_Marketing_Sales/
+├── 05_Operations/
+├── 06_Personnel_HR/
+├── 07_Assets_Inventory/
+├── 08_Reports_Analytics/
+├── seeking/
+├── Research_Database/
+│   └── State_Funders/
+│       └── California_State/
+│           ├── Open_Opportunities/
+│           ├── Source_Documents/
+│           ├── Submitted/
+│           ├── Awarded/
+│           └── Closed/
+├── README.md
+└── README.html</code></pre>
+        </section>
+
+        <section class="section">
+            <h2>File Naming Standard</h2>
+            <p>Use <code>YYYY-MM-DD_ClientOrGrant_DocumentType_Context_v01.ext</code>.</p>
+            <ul>
+                <li><code>2026-05-16_SBDC_Proposal_Draft_v01.docx</code></li>
+                <li><code>2026-05-22_SBDC_Budget_Justification_v02.xlsx</code></li>
+                <li><code>2026-06-05_SBDC_Agreement_v03_Executed.pdf</code></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>California Grants Portal Workflow</h2>
+            <p>Portal: <a href="https://www.grants.ca.gov/" target="_blank" rel="noreferrer">grants.ca.gov</a></p>
+            <ol>
+                <li>Search for relevant state opportunities.</li>
+                <li>Save official guidelines in <code>Source_Documents/</code>.</li>
+                <li>Create one note per opportunity in <code>Open_Opportunities/</code>.</li>
+                <li>Move records to <code>Submitted/</code>, <code>Awarded/</code>, or <code>Closed/</code> as status changes.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Grant Opportunity Tracker</h2>
+            <p>Create an Excel tracker at <code>Research_Database/2026_Grant_Opportunity_Tracker.xlsx</code>.</p>
+            <table>
+                <tr>
+                    <th>Date Received</th>
+                    <th>Portal Alert Date</th>
+                    <th>Grant Title / Program</th>
+                    <th>Agency</th>
+                    <th>Deadline</th>
+                    <th>Amount Range</th>
+                    <th>Eligibility</th>
+                    <th>Fit Score</th>
+                    <th>Potential Client</th>
+                    <th>Status</th>
+                    <th>Notes / Link</th>
+                </tr>
+                <tr>
+                    <td>2026-05-15</td>
+                    <td>2026-05-14</td>
+                    <td>Small Business Economic Development Grant</td>
+                    <td>CA Business &amp; Economic Development</td>
+                    <td>2026-06-30</td>
+                    <td>$50K - $250K</td>
+                    <td>Small business, Gardena</td>
+                    <td>9</td>
+                    <td>Client ABC LLC</td>
+                    <td>Proposal in progress</td>
+                    <td><a href="https://www.grants.ca.gov/" target="_blank" rel="noreferrer">Portal link</a>; strong match</td>
+                </tr>
+            </table>
+            <p>Use the tracker to log new opportunities before moving them into client-specific work folders.</p>
+        </section>
+
+        <section class="section">
+            <h2>Grant Writing Software</h2>
+            <table>
+                <tr>
+                    <th>Tool Type</th>
+                    <th>Best Use</th>
+                    <th>Examples</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>All-in-one platform</td>
+                    <td>Discovery, tracking, and drafting in one system</td>
+                    <td>Instrumentl, Grantable</td>
+                    <td>Most useful when prospecting volume or deadline load becomes difficult to manage manually.</td>
+                </tr>
+                <tr>
+                    <td>Writing assistant</td>
+                    <td>Drafting first-pass narratives and revisions</td>
+                    <td>Grantable, ChatGPT</td>
+                    <td>Best used with local templates and human review for compliance and voice.</td>
+                </tr>
+                <tr>
+                    <td>Research database</td>
+                    <td>Private and foundation prospecting</td>
+                    <td>Candid FDO, GrantStation</td>
+                    <td>Useful when state and federal portals are not enough.</td>
+                </tr>
+                <tr>
+                    <td>Lightweight local stack</td>
+                    <td>Low-cost workflow</td>
+                    <td>California Grants Portal, tracker, local templates</td>
+                    <td>Good default for a solo operator until clear bottlenecks appear.</td>
+                </tr>
+            </table>
+            <p>Use one paid platform at a time when testing. Choose for the bottleneck you actually have: prospecting, drafting, or foundation research.</p>
+        </section>
+
+        <section class="section">
+            <h2>Daily Use</h2>
+            <ol>
+                <li>Review opportunities in <code>seeking/</code> and the California state folders.</li>
+                <li>Log promising grants in the Excel tracker.</li>
+                <li>Track fit, deadlines, and requirements in the opportunity template.</li>
+                <li>Move serious prospects into an active grant work folder when ready to apply.</li>
+            </ol>
+        </section>
+
+        <footer>
+            Local workspace reference for grant writing and funding research.
+        </footer>
+    </div>
+</body>
+</html>

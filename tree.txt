@@ -1,0 +1,74 @@
+.
+├── 01_Strategy_Planning
+├── 02_Financials
+├── 03_Legal_Compliance
+├── 04_Marketing_Sales
+├── 05_Operations
+├── 06_Personnel_HR
+├── 07_Assets_Inventory
+├── 08_Reports_Analytics
+├── AGENTS.md
+├── GRANT_WRITING_CODEX_INDEX.md
+├── README.html
+├── README.md
+├── Research_Database
+│   ├── 2026_Grant_Opportunity_Tracker.csv
+│   └── State_Funders
+│       └── California_State
+│           ├── Awarded
+│           ├── Closed
+│           ├── Open_Opportunities
+│           │   └── opportunity-tracker-template.md
+│           ├── README.md
+│           ├── Source_Documents
+│           └── Submitted
+├── Templates_Resources
+│   ├── README.md
+│   ├── ai-grant-prompts.md
+│   └── proposal-outline-template.md
+├── grant-writing-codex
+│   ├── README.md
+│   ├── app
+│   │   ├── __init__.py
+│   │   ├── ai.py
+│   │   ├── config.py
+│   │   ├── crud.py
+│   │   ├── database.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   ├── portal.py
+│   │   ├── reporting.py
+│   │   ├── schemas.py
+│   │   └── templates.py
+│   ├── dashboard
+│   │   └── app.py
+│   ├── docs
+│   │   ├── GRANT_WRITING_CODEX.md
+│   │   ├── REFINED_PROMPTS.md
+│   │   └── STEP_PROMPTS.md
+│   ├── requirements.txt
+│   ├── scripts
+│   │   ├── create_client_workspace.py
+│   │   └── seed_sample_data.py
+│   ├── templates
+│   │   └── step_proposal_outline.md
+│   └── tests
+│       └── test_core.py
+├── grant-writing-software-comparison.md
+├── seeking
+│   ├── README.md
+│   ├── electrical-ev-towing
+│   │   └── ev-towing-grants.md
+│   ├── federal-tech-ai
+│   │   └── tech-ai-grants.md
+│   ├── maritime-towing
+│   │   └── maritime-grants.md
+│   ├── sba-step-california
+│   │   └── step-grants.md
+│   ├── state-ai-adoption
+│   │   └── state-ai-grants.md
+│   └── tax-credits
+│       └── tax-incentives.md
+└── tree.txt
+
+32 directories, 40 files

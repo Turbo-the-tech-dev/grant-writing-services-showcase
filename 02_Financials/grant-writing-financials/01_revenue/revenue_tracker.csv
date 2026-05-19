@@ -1,0 +1,2 @@
+invoice_date,client_name,project_or_retainer,invoice_number,service_period,funder_or_grant_name,proposal_type,amount_billed,amount_received,payment_date,payment_method,status,accounts_receivable,1099_reportable,notes
+2026-01-15,Example Nonprofit,Monthly Retainer,INV-2026-001,2026-01,General Advisory,N/A,2500.00,2500.00,2026-01-25,ACH,Paid,0.00,Yes,Replace sample row with live data

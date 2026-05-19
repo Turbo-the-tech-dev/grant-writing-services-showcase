@@ -1,0 +1,2 @@
+client_name,tier,start_date,end_date,monthly_fee,billing_day,autopay,status,scope_summary,hours_included,overage_rate,renewal_notice_date,notes
+Example Nonprofit,Growth Retainer,2026-01-01,2026-06-30,2500.00,1,Yes,Active,Strategy + 2 proposals/month,12,175.00,2026-05-31,Adjust to your actual offering
